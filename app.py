@@ -14,9 +14,7 @@ import pandas as pd
 st.set_page_config(page_title="SQL-GPT",layout='wide',page_icon=":bar_chart:")
 
 # Initialising LLM
-OPENAI_API_KEY = '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'
-
-llm = ChatOpenAI(temperature=0, openai_api_key=OPENAI_API_KEY)
+llm = ChatOpenAI(temperature=0, openai_api_key=os.getenv('openai_api_key'))
 
 # Constructing Databse URL
 
