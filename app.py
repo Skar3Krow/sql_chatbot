@@ -11,7 +11,7 @@ import pandas as pd
 
 
 #Streamlit page configuration
-st.set_page_config(page_title="SQL-GPT",layout='wide',page_icon=":bar_chart:")
+st.set_page_config(page_title="EzQL",layout='wide',page_icon=":bar_chart:")
 
 # Initialising LLM
 llm = ChatOpenAI(temperature=0, openai_api_key=os.getenv('openai_api_key'))
